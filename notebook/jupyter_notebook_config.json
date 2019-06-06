@@ -5,6 +5,8 @@
     },
     "port": 8080,
     "token": "",
-    "password": ""
+    "password": "",
+    "base_url": "/function/notebook/",
+    "base_kernal_url": "/function/notebook/"
   }
 }

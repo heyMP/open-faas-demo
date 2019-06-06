@@ -20,6 +20,3 @@ USER jovyan
 EXPOSE 8080
 
 HEALTHCHECK --interval=3s CMD [ -e /tmp/.lock ] || exit 1
-
-# CMD [ "start-notebook.sh" ]
-CMD [ "start-notebook.sh", "--NotebookApp.base_url=/" ]
