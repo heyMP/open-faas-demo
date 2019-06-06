@@ -1,0 +1,21 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://46.101.146.160:8080
+functions:
+  hello-world:
+    lang: node
+    handler: ./hello-world
+    image: heymp/helloworld:latest
+  site-title:
+    lang: node
+    handler: ./site-title
+    image: heymp/site-title:latest
+  notebook:
+    lang: dockerfile
+    handler: ./notebook
+    image: heymp/notebook:latest
+  rstudio:
+    lang: dockerfile
+    handler: ./rstudio
+    image: heymp/rstudio:latest
